@@ -48,9 +48,17 @@
       <div class="brand">
         <!-- <a href="#!"><img src="../assets/img/KE-logos_transparent-removebg-preview.png" height=70px; width="70px"/></a> -->
       </div>
-      <nav class="">
-        <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-        <ul class="nav-list">
+      <nav class="nav">
+<!--         <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+ -->     
+ <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+    <ul class="nav-list">
           <li>
             <a href="#!">Home</a>
           </li>

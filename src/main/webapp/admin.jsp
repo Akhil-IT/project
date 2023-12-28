@@ -1,8 +1,8 @@
-<%-- <%
+ <%
 if(session.getAttribute("name")== null){
 	response.sendRedirect("login.jsp");
 } 
-%> --%>
+%> 
 
 
 <%@page import="java.sql.DriverManager"%>
@@ -42,46 +42,27 @@ ResultSet resultSet = null;
 
 </head>
 <body>
-<section class="navigation">
-    <div class="nav-container">
-      <div class="brand">
-        <!-- <a href="#!"><img src="../assets/img/KE-logos_transparent-removebg-preview.png" height=70px; width="70px"/></a> -->
-      </div>
-      <nav class="">
-        <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-        <ul class="nav-list">
-          <li>
-            <a href="index.jsp">Home</a>
-          </li>
-          <li>
-            <a href="#!">About</a>
-          </li>
-          <li>
-            <!-- <ul class="nav-dropdown">
-              <li>
-                <a href="#!">TV INSTALLATION</a>
-              </li>
-              <li>
-                <a href="#!">TV REPAIR</a>
-              </li>
-              <li>
-                <a href="#!">ELECTRICAL WORK</a>
-              </li>
-            </ul> -->
-             <%-- <div id="user-info">
-            <span>Welcome, <%= request.getAttribute("Uname") %></span>
-        </div> --%>
-          </li>
-          <!-- <li>
-            <a href="#!">Pricing</a>
-          </li> -->
-         
-          <li>
-            <a href="logout.jsp">Logout</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+<section>
+<nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="index.jsp">Home</a></li>
+                <!-- <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="contact.jsp">Contact Us</a></li> -->
+                <li><a href="logout.jsp">Logout</a>
+            </ul>
+            <div class=""><img src="https://www.dropbox.com/scl/fi/8soqor21aa9mufga0gvpq/KE-logos_transparent-removebg-preview.png?rlkey=1k78vqsft19a9r2jur8z4gcg7&dl=0.png"/></div>
+        </div>
+    </nav>
+
 </section>
 <!-- <form action="search" method="post">
 

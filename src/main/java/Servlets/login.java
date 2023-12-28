@@ -34,8 +34,12 @@ public class login extends HttpServlet {
 			try {
 
 				Class.forName("com.mysql.cj.jdbc.Driver");//cj
-			    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/eclipse","root","user");
-			    PreparedStatement pst = con.prepareStatement("select * from users where uemail=? and upassword=?");
+				/*
+				 * Connection con =
+				 * DriverManager.getConnection("jdbc:mysql://localhost:1123/ke","root","user");
+				 */	
+				Connection con = DriverManager.getConnection("jdbc:mysql://avnadmin:AVNS_aNqOdsa4ph8c9pWan8D@spring-akhilmadey321-041e.a.aivencloud.com:11223/ke?ssl-mode=REQUIRED");
+				PreparedStatement pst = con.prepareStatement("select * from users where uemail=? and upassword=?");
 			    //pst.setString(1, uname);
 			    pst.setString(1, uemail);
 			    pst.setString(2, upassword);

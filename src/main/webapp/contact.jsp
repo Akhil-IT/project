@@ -4,7 +4,9 @@
 <html>
 <head>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-
+<meta charset="UTF-8">
+<meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <meta charset="ISO-8859-1">
 <title>Contact-Us</title>
   <link href="style.css" rel="stylesheet">
@@ -222,38 +224,24 @@ textarea:valid+label {
       <div class="brand">
         <!-- <a href="#!"><img src="../assets/img/KE-logos_transparent-removebg-preview.png" height=70px; width="70px"/></a> -->
       </div>
-      <nav class="">
-        <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-        <ul class="nav-list">
-          <li>
-            <a href="index.jsp">Home</a>
-          </li>
-          <li>
-            <a href="#!">About</a>
-          </li>
-          <li>
-            <a href="#!">Services</a>
-            <!-- <ul class="nav-dropdown">
-              <li>
-                <a href="#!">TV INSTALLATION</a>
-              </li>
-              <li>
-                <a href="#!">TV REPAIR</a>
-              </li>
-              <li>
-                <a href="#!">ELECTRICAL WORK</a>
-              </li>
-            </ul> -->
-          </li>
-          <!-- <li>
-            <a href="#!">Pricing</a>
-          </li> -->
-         
-          <li>
-            <a href="contact.jsp">Contact</a>
-          </li>
-        </ul>
-      </nav>
+<nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="index.jsp">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="contact.jsp">Contact Us</a></li>
+            </ul>
+            <h1 class="logo">Logo</h1>
+        </div>
+    </nav>
     </div>
   </section>
   <section id="contact">
@@ -276,7 +264,7 @@ textarea:valid+label {
       </div>
     </div>
     <div class="contact-form-wrapper">
-      <form>
+      <form method="post" action="submit" >
         <div class="form-item">
           <input type="text" name="sender" required>
           <label>Name:</label>
@@ -289,7 +277,7 @@ textarea:valid+label {
           <textarea class="" name="message" required></textarea>
           <label>Message:</label>
         </div>
-        <button class="submit-btn">Send</button>  
+        <button type="submit" class="submit-btn">Send</button>  
       </form>
     </div>
   </div>
@@ -306,8 +294,8 @@ textarea:valid+label {
               <p>
                 REDBRIDGE <br>
                 AP 533201, INDIA<br><br>
-                <strong>Phone:</strong><a type="phone"> +919618385539</a><br>
-                <strong>Email:</strong> info@kumarelectronics.com<br>
+                                <strong>Phone:</strong><a type="phone" href="tel:+919618385539"> +919618385539</a><br>
+                <strong>Email:</strong><a href="mailto:info@kumarelectronics.com" >info@kumarelectronics.com<br></a>
               </p>
               <!-- <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -356,7 +344,7 @@ textarea:valid+label {
       <div class="copyright">
       
         &copy; Copyright <strong><span>KUMAR ELECTRONICS</span></strong>. All Rights Reserved 2023
-                   <p>Design and Developed By:<a href="http://localhost:8080/Incloud/"> INCLOUD </a></p>
+                   <p>Design and Developed By:<a > INCLOUD </a></p>
       </div>
      
       </div>

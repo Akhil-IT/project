@@ -40,56 +40,32 @@
 .error.active {
   padding: 0.3em;
 }
+
 </style>
 </head>
 <body>
-<section class="navigation">
-    <div class="nav-container">
-      <div class="brand">
-        <!-- <a href="#!"><img src="../assets/img/KE-logos_transparent-removebg-preview.png" height=70px; width="70px"/></a> -->
-      </div>
-      <nav class="nav">
-<!--         <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
- -->     
- <div class="nav-btn">
-    <label for="nav-check">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
-  </div>
-    <ul class="nav-list">
-          <li>
-            <a href="#!">Home</a>
-          </li>
-          <li>
-            <a href="#!">About</a>
-          </li>
-          <li>
-            <a href="#!">Services</a>
-            <!-- <ul class="nav-dropdown">
-              <li>
-                <a href="#!">TV INSTALLATION</a>
-              </li>
-              <li>
-                <a href="#!">TV REPAIR</a>
-              </li>
-              <li>
-                <a href="#!">ELECTRICAL WORK</a>
-              </li>
-            </ul> -->
-          </li>
-          <!-- <li>
-            <a href="#!">Pricing</a>
-          </li> -->
-         
-          <li>
-            <a href="contact.jsp">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </section>
+<nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="index.jsp">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="contact.jsp">Contact Us</a></li>
+            </ul>
+            <h1 class="logo ">KE
+            
+            </h1>
+        </div>
+    </nav>
+
+
   <header id="header" class="header">
     
   </header>
@@ -193,13 +169,20 @@
                 <label class="label" >Number:</label>
                 <input type="digit" class="form-control" name="phone" placeholder="Phone" required>
               </div>
-              <div class="col-md-12">
+            <div class="col-md-12">
                 <label class="label" >Address:</label>
-                <input type="text" class="form-control" name="address" placeholder="Address" required/>
-
-              </div>
-              
-
+<!--                 <input type="text" class="form-control "id="autocomplete-container" name="address" placeholder="Address" required/>
+ -->			<select class="form-control" id="mainDropdown" name="address" required>
+                  
+				<option >Amalapuram</option>
+				 <option >Amalapuram Rural</option>
+				 <option >Mummidavaram</option>
+				 <option >Allavaram Mandal</option>
+				  <option >Razole</option>
+				 
+                 </select>
+ 
+              </div> 
 
               <div class="col-md-12 text-center">
                 <button type="submit" class="btn btn-primary" onclick="myclick()">Book</button>
@@ -225,8 +208,8 @@
               <p>
                 REDBRIDGE <br>
                 AP 533201, INDIA<br><br>
-                <strong>Phone:</strong><a type="phone"> +919618385539</a><br>
-                <strong>Email:</strong> info@kumarelectronics.com<br>
+                <strong>Phone:</strong><a type="phone" href="tel:+919618385539"> +919618385539</a><br>
+                <strong>Email:</strong><a href="mailto:info@kumarelectronics.com" >info@kumarelectronics.com<br></a>
               </p>
               <!-- <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -275,7 +258,7 @@
       <div class="copyright">
       
         &copy; Copyright <strong><span>KUMAR ELECTRONICS</span></strong>. All Rights Reserved 2023
-                   <p>Design and Developed By:<a href="http://localhost:8080/Incloud/"> INCLOUD </a></p>
+                   <p>Design and Developed By:<a> INCLOUD </a></p>
       </div>
      
       </div>
@@ -350,6 +333,16 @@ if(status == success){
         });
       }
     }
+    /* 
+	The addressAutocomplete takes as parameters:
+  - a container element (div)
+  - callback to notify about address selection
+  - geocoder options:
+  	 - placeholder - placeholder text for an input element
+     - type - location type
+*/
+
+
   </script>
 
 

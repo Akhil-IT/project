@@ -136,4 +136,24 @@
     <servlet-name>searching</servlet-name>
     <url-pattern>/searching</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>maps</display-name>
+    <servlet-name>maps</servlet-name>
+    <servlet-class>Servlets.maps</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>maps</servlet-name>
+    <url-pattern>/maps</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>contact</display-name>
+    <servlet-name>contact</servlet-name>
+    <servlet-class>Servlets.contact</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>contact</servlet-name>
+    <url-pattern>/contact</url-pattern>
+  </servlet-mapping>
 </web-app>
